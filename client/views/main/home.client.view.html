@@ -1,0 +1,14 @@
+<div class="row">
+	<div class="col-sm-12">
+		<h1>
+			Live Chat
+		</h1>
+		<ul>
+			<li ng-repeat="message in hc.messages">{{ message }}</li>
+		</ul>
+		<form ng-submit="hc.sendMessage()">
+			<input type="text" class="form-control" ng-model="hc.userMessage">
+			<button type="submit" class="btn btn-primary">Enviar</button>
+		</form>
+	</div><!-- col-sm-12 -->
+</div><!-- row -->
